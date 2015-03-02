@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>42004F96-2BF8-40C8-ABC2-29FDFF16C201</string>
+	<key>IDESourceControlProjectName</key>
+	<string>GPUImage</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>F51DAD499FF7E8F8EB9D3CE6E98352DDE1C797B4</key>
+		<string>https://github.com/RCcode/iOSNoCropSet.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>NoCrop/framework/GPUImage.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>F51DAD499FF7E8F8EB9D3CE6E98352DDE1C797B4</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/RCcode/iOSNoCropSet.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>F51DAD499FF7E8F8EB9D3CE6E98352DDE1C797B4</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>F51DAD499FF7E8F8EB9D3CE6E98352DDE1C797B4</string>
+			<key>IDESourceControlWCCName</key>
+			<string>iOSNoCropSet-master</string>
+		</dict>
+	</array>
+</dict>
+</plist>
