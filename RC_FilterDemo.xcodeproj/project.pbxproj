@@ -67,6 +67,15 @@
 		C887EE9D1A80A4D100E1F454 /* libGPUImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C887EE981A80A4A000E1F454 /* libGPUImage.a */; };
 		C887EEA31A80ABA500E1F454 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = C887EEA01A80ABA500E1F454 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		C887EEA41A80ABA500E1F454 /* PublicMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = C887EEA21A80ABA500E1F454 /* PublicMethod.m */; };
+		C8A258391AA55F14004AF251 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C8A258301AA55F14004AF251 /* 1.jpg */; };
+		C8A2583A1AA55F14004AF251 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C8A258311AA55F14004AF251 /* 2.jpg */; };
+		C8A2583B1AA55F14004AF251 /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C8A258321AA55F14004AF251 /* 3.jpg */; };
+		C8A2583C1AA55F14004AF251 /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C8A258331AA55F14004AF251 /* 4.jpg */; };
+		C8A2583D1AA55F14004AF251 /* 5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C8A258341AA55F14004AF251 /* 5.jpg */; };
+		C8A2583E1AA55F14004AF251 /* 6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C8A258351AA55F14004AF251 /* 6.jpg */; };
+		C8A2583F1AA55F14004AF251 /* 7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C8A258361AA55F14004AF251 /* 7.jpg */; };
+		C8A258401AA55F14004AF251 /* 8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C8A258371AA55F14004AF251 /* 8.jpg */; };
+		C8A258411AA55F14004AF251 /* 0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C8A258381AA55F14004AF251 /* 0.jpg */; };
 		C8AD935E1AA1662400D10890 /* IFNewTfFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = C8AD935D1AA1662400D10890 /* IFNewTfFilter.m */; };
 		C8AD93631AA173F900D10890 /* IFTextureFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = C8AD93621AA173F900D10890 /* IFTextureFilter.m */; };
 		C8BA516C1AA0140E0027A581 /* UIImage+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = C8BA516B1AA0140E0027A581 /* UIImage+Utility.m */; };
@@ -648,6 +657,15 @@
 		C887EEA01A80ABA500E1F454 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
 		C887EEA11A80ABA500E1F454 /* PublicMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PublicMethod.h; sourceTree = "<group>"; };
 		C887EEA21A80ABA500E1F454 /* PublicMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PublicMethod.m; sourceTree = "<group>"; };
+		C8A258301AA55F14004AF251 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		C8A258311AA55F14004AF251 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
+		C8A258321AA55F14004AF251 /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
+		C8A258331AA55F14004AF251 /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpg; sourceTree = "<group>"; };
+		C8A258341AA55F14004AF251 /* 5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 5.jpg; sourceTree = "<group>"; };
+		C8A258351AA55F14004AF251 /* 6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 6.jpg; sourceTree = "<group>"; };
+		C8A258361AA55F14004AF251 /* 7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 7.jpg; sourceTree = "<group>"; };
+		C8A258371AA55F14004AF251 /* 8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 8.jpg; sourceTree = "<group>"; };
+		C8A258381AA55F14004AF251 /* 0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 0.jpg; sourceTree = "<group>"; };
 		C8AD935C1AA1662400D10890 /* IFNewTfFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFNewTfFilter.h; sourceTree = "<group>"; };
 		C8AD935D1AA1662400D10890 /* IFNewTfFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFNewTfFilter.m; sourceTree = "<group>"; };
 		C8AD93611AA173F900D10890 /* IFTextureFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFTextureFilter.h; sourceTree = "<group>"; };
@@ -1297,6 +1315,15 @@
 		C887EE6A1A80A3AE00E1F454 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C8A258301AA55F14004AF251 /* 1.jpg */,
+				C8A258311AA55F14004AF251 /* 2.jpg */,
+				C8A258321AA55F14004AF251 /* 3.jpg */,
+				C8A258331AA55F14004AF251 /* 4.jpg */,
+				C8A258341AA55F14004AF251 /* 5.jpg */,
+				C8A258351AA55F14004AF251 /* 6.jpg */,
+				C8A258361AA55F14004AF251 /* 7.jpg */,
+				C8A258371AA55F14004AF251 /* 8.jpg */,
+				C8A258381AA55F14004AF251 /* 0.jpg */,
 				C8E4D95C1A8C30E400C4D579 /* FilterConfig */,
 				C8E4D8071A8C306D00C4D579 /* FilterResources */,
 				C887EE6B1A80A3AE00E1F454 /* Info.plist */,
@@ -2045,6 +2072,7 @@
 				C8E4D9111A8C306E00C4D579 /* com_rcplatform_opengl_filter_shadow_46.jpg in Resources */,
 				C8E4D8FE1A8C306E00C4D579 /* com_rcplatform_opengl_filter_shadow_18.jpg in Resources */,
 				C802CB851A9F29E700DC4EE1 /* 52003.png in Resources */,
+				C8A2583F1AA55F14004AF251 /* 7.jpg in Resources */,
 				C8E4DA8B1A8C30E500C4D579 /* com_rcplatform_filter_config_115.cfg in Resources */,
 				C8E4DB441A8C30E500C4D579 /* com_rcplatform_filter_config_52.cfg in Resources */,
 				C8E4DAAA1A8C30E500C4D579 /* com_rcplatform_filter_config_143.cfg in Resources */,
@@ -2055,6 +2083,7 @@
 				C802CB901A9F29E700DC4EE1 /* NCVignetteMap.png in Resources */,
 				C8E4DB4D1A8C30E500C4D579 /* com_rcplatform_filter_config_60.cfg in Resources */,
 				C8E4DAC91A8C30E500C4D579 /* com_rcplatform_filter_config_21.cfg in Resources */,
+				C8A2583A1AA55F14004AF251 /* 2.jpg in Resources */,
 				C8E4DB6F1A8C30E500C4D579 /* com_rcplatform_filter_config_91.cfg in Resources */,
 				C8E4DB8C1A8C30E500C4D579 /* com_rcplatform_filter_fragment_shader_line_image.glsl in Resources */,
 				C8E4DB1D1A8C30E500C4D579 /* com_rcplatform_filter_config_323.cfg in Resources */,
@@ -2143,6 +2172,7 @@
 				C8E4D8DC1A8C306E00C4D579 /* com_rcplatform_opengl_filter_mengceng1022_3.png in Resources */,
 				C8E4D8ED1A8C306E00C4D579 /* com_rcplatform_opengl_filter_mengceng_new_42.png in Resources */,
 				C8E4D94C1A8C306E00C4D579 /* com_rcplatform_opengl_filter_texture_44.jpg in Resources */,
+				C8A2583B1AA55F14004AF251 /* 3.jpg in Resources */,
 				C8E4DA961A8C30E500C4D579 /* com_rcplatform_filter_config_125.cfg in Resources */,
 				C8E4DA8C1A8C30E500C4D579 /* com_rcplatform_filter_config_116.cfg in Resources */,
 				C8E4DAAC1A8C30E500C4D579 /* com_rcplatform_filter_config_145.cfg in Resources */,
@@ -2186,10 +2216,12 @@
 				C8E4D94B1A8C306E00C4D579 /* com_rcplatform_opengl_filter_texture_43.jpg in Resources */,
 				C8E4D9021A8C306E00C4D579 /* com_rcplatform_opengl_filter_shadow_29.jpg in Resources */,
 				C8E4DAA61A8C30E500C4D579 /* com_rcplatform_filter_config_14.cfg in Resources */,
+				C8A258391AA55F14004AF251 /* 1.jpg in Resources */,
 				C8E4DA8E1A8C30E500C4D579 /* com_rcplatform_filter_config_118.cfg in Resources */,
 				C8E4DB211A8C30E500C4D579 /* com_rcplatform_filter_config_327.cfg in Resources */,
 				C8E4DAB61A8C30E500C4D579 /* com_rcplatform_filter_config_154.cfg in Resources */,
 				C8E4DB671A8C30E500C4D579 /* com_rcplatform_filter_config_84.cfg in Resources */,
+				C8A2583D1AA55F14004AF251 /* 5.jpg in Resources */,
 				C8E4DB8E1A8C30E500C4D579 /* com_rcplatform_filter_fragment_shader_no_filter.glsl in Resources */,
 				C8E4D93D1A8C306E00C4D579 /* com_rcplatform_opengl_filter_texture_23.jpg in Resources */,
 				C8E4D9231A8C306E00C4D579 /* com_rcplatform_opengl_filter_shadow_87.jpg in Resources */,
@@ -2197,6 +2229,7 @@
 				C8E4D9071A8C306E00C4D579 /* com_rcplatform_opengl_filter_shadow_36.jpg in Resources */,
 				C802CB8F1A9F29E700DC4EE1 /* NCSoftLight.png in Resources */,
 				C8E4DA901A8C30E500C4D579 /* com_rcplatform_filter_config_12.cfg in Resources */,
+				C8A2583E1AA55F14004AF251 /* 6.jpg in Resources */,
 				C8E4D8F61A8C306E00C4D579 /* com_rcplatform_opengl_filter_shadow_07.jpg in Resources */,
 				C8E4DB021A8C30E500C4D579 /* com_rcplatform_filter_config_29.cfg in Resources */,
 				C8E4DB8B1A8C30E500C4D579 /* com_rcplatform_filter_fragment_shader_lighting_image.glsl in Resources */,
@@ -2234,6 +2267,7 @@
 				C8E4DB581A8C30E500C4D579 /* com_rcplatform_filter_config_70.cfg in Resources */,
 				C8E4DB731A8C30E500C4D579 /* com_rcplatform_filter_config_95.cfg in Resources */,
 				C8E4DB341A8C30E500C4D579 /* com_rcplatform_filter_config_38.cfg in Resources */,
+				C8A2583C1AA55F14004AF251 /* 4.jpg in Resources */,
 				C8E4D8FF1A8C306E00C4D579 /* com_rcplatform_opengl_filter_shadow_19.jpg in Resources */,
 				C8E4D9421A8C306E00C4D579 /* com_rcplatform_opengl_filter_texture_29.jpg in Resources */,
 				C8E4D93E1A8C306E00C4D579 /* com_rcplatform_opengl_filter_texture_24.jpg in Resources */,
@@ -2300,6 +2334,7 @@
 				C8E4D8EA1A8C306E00C4D579 /* com_rcplatform_opengl_filter_mengceng_8_2.png in Resources */,
 				C8E4DB231A8C30E500C4D579 /* com_rcplatform_filter_config_329.cfg in Resources */,
 				C8E4DB2F1A8C30E500C4D579 /* com_rcplatform_filter_config_34.cfg in Resources */,
+				C8A258411AA55F14004AF251 /* 0.jpg in Resources */,
 				C8E4D8E01A8C306E00C4D579 /* com_rcplatform_opengl_filter_mengceng1022_8.png in Resources */,
 				C8E4D91B1A8C306E00C4D579 /* com_rcplatform_opengl_filter_shadow_78.jpg in Resources */,
 				C8E4D9181A8C306E00C4D579 /* com_rcplatform_opengl_filter_shadow_73.jpg in Resources */,
@@ -2334,6 +2369,7 @@
 				C8E4DB291A8C30E500C4D579 /* com_rcplatform_filter_config_334.cfg in Resources */,
 				C8E4DAEC1A8C30E500C4D579 /* com_rcplatform_filter_config_241.cfg in Resources */,
 				C8E4D8BE1A8C306E00C4D579 /* com_rcplatform_opengl_filter_51013.png in Resources */,
+				C8A258401AA55F14004AF251 /* 8.jpg in Resources */,
 				C8E4DB011A8C30E500C4D579 /* com_rcplatform_filter_config_28.cfg in Resources */,
 				C8E4DB5C1A8C30E500C4D579 /* com_rcplatform_filter_config_74.cfg in Resources */,
 				C8E4DA841A8C30E500C4D579 /* com_rcplatform_filter_config_109.cfg in Resources */,

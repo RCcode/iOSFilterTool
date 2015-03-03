@@ -10,6 +10,7 @@
 {
     //滤镜处理完成之后的回调
     FilterCompletionBlock _filterCompletionBlock;
+    NSInteger _index;
 }
 
 @property (nonatomic, strong) GPUImageFilter *filter;
@@ -42,6 +43,7 @@
 @property (nonatomic, strong) AVAssetExportSession *assetExportSession;
 @property (nonatomic, strong) NSMutableDictionary *progressConfigDic;
 
+@property (nonatomic, strong) NSArray *oriImages;
 @property (nonatomic ,strong) UIImage *resultImage;
 
 @end
@@ -72,6 +74,7 @@
 @synthesize stillImageOutput;
 
 @synthesize delegate;
+@synthesize multiDelegate;
 
 @synthesize movieWriter;
 @synthesize isRecordingMovie;
@@ -145,11 +148,17 @@
                 if (self.resultImage != nil) {
                     NSArray *resultArray = [NSArray arrayWithObjects:self.resultImage,[NSNumber numberWithInt:currentFilterType], nil];
                     NSLog(@"filtedImage.size = %@",NSStringFromCGSize(self.resultImage.size));
+                    
                     if ([delegate respondsToSelector:@selector(videoCameraResultImage:)]) {
                         [delegate performSelector:@selector(videoCameraResultImage:) withObject:resultArray];
                     }else{
                         NSLog(@"eeeeend");
 //                        [MBProgressHUD hideAllHUDsForView:[[[UIApplication sharedApplication] delegate] window] animated:YES];
+                    }
+                    if ([multiDelegate respondsToSelector:@selector(videoCameraResultImage:andIndex:)]) {
+                        [multiDelegate videoCameraResultImage:self.resultImage andIndex:_index];
+                        _index ++;
+                        [self switchFilterType:currentFilterType withIndex:_index];
                     }
                     
                 }
@@ -262,21 +271,37 @@
 //    });
 }
 
+- (void)switchFilterType:(NCFilterType)type withImages:(NSArray *)images
+{
+    _index = 0;
+    self.oriImages = images;
+    [self switchFilterType:type withIndex:_index];
+}
+
+- (void)switchFilterType:(NCFilterType)type withIndex:(NSInteger)index
+{
+    if (index < self.oriImages.count && self.oriImages[index]) {
+        if (self.stillImageSource) {
+            [self.stillImageSource removeAllTargets];
+            
+        }
+        self.stillImageSource = [[GPUImagePicture alloc] initWithImage:self.oriImages[index]];
+        [self performSelector:@selector(forceSwitchToNewFilterAfterDelay:) withObject:[NSNumber numberWithInt:type] afterDelay:0.0f];
+    }else{
+        _index ++;
+        if (_index < self.oriImages.count) {
+            [self switchFilterType:type withIndex:_index];
+        }
+    }
+
+}
 
 - (void)switchFilterType:(NCFilterType)type {
     
     if ((self.rawImage != nil) && (self.stillImageSource == nil)) {
-        
-        //        [self.rotationFilter removeTarget:self.filter];
         self.stillImageSource = [[GPUImagePicture alloc] initWithImage:self.rawImage];
-        //        [self.stillImageSource addTarget:self.filter];
     } else {
-        //
-        //        if (currentFilterType == type) {
-        //            return;
-        //        }
     }
-//    [MBProgressHUD showHUDAddedTo:[[[UIApplication sharedApplication] delegate] window] animated:YES];
     [self performSelector:@selector(forceSwitchToNewFilterAfterDelay:) withObject:[NSNumber numberWithInt:type] afterDelay:0.0f];
     
 }
@@ -367,6 +392,15 @@
 
     self.gpuImageView = view;
     [self.filter addTarget:self.gpuImageView];
+    return self;
+}
+
+- (id)init
+{
+    if(self = [super init]){
+        _index = 0;
+    
+    }
     return self;
 }
 

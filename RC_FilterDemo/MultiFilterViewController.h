@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface MultiFilterViewController : UIViewController
+#import "NCVideoCamera.h"
+@interface MultiFilterViewController : UIViewController <NCMultiFilterDelegate>
 
 @end

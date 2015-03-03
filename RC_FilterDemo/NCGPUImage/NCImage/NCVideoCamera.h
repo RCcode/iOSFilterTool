@@ -24,11 +24,18 @@ typedef void(^FilterCompletionBlock) (UIImage *filterImage);
 - (void)videoCameraType:(NSNumber *)type;
 @end
 
+@protocol NCMultiFilterDelegate <NSObject>
+
+- (void)videoCameraResultImage:(UIImage *)image andIndex:(NSInteger)index;
+
+@end
+
 @interface NCVideoCamera : NSObject
 
 @property (strong, readonly) GPUImageView *gpuImageView;
 @property (strong, readonly) GPUImageView *gpuImageView_HD;
-@property (nonatomic, strong) UIImage *rawImage;
+@property (nonatomic, strong) UIImage *rawImage;                                                 
+@property (nonatomic, assign) id<NCMultiFilterDelegate> multiDelegate;
 @property (nonatomic, assign) id<IFVideoCameraDelegate> delegate;
 @property (nonatomic, unsafe_unretained, readonly) BOOL isRecordingMovie;
 @property (nonatomic, strong) GPUImageFilter *effectFilter;
@@ -78,6 +85,8 @@ typedef void(^FilterCompletionBlock) (UIImage *filterImage);
  */
 - (void)switchFilterType:(NCFilterType)type;
 
+- (void)switchFilterType:(NCFilterType)type withImages:(NSArray *)images;
+
 /**
  *	添加预览缩略图
  *
@@ -92,6 +101,7 @@ typedef void(^FilterCompletionBlock) (UIImage *filterImage);
  *  @param frame    gpuImageView的frame
  *  @param rawImage 需要进行滤镜处理的image对象
  */
+- (id)init;
 + (instancetype)videoCameraWithFrame:(CGRect)frame Image:(UIImage *)rawImage;
 + (instancetype)videoCameraWithGPUImageView:(GPUImageView *)gpuImageView Image:(UIImage *)rawImage andFilterModel:(FilterModel *)model;
 - (void)switchFilter:(NCFilterType)type WithCompletionBlock:(FilterCompletionBlock)completion;

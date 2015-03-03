@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "PublicMethod.h"
 #import "SingleFilterViewController.h"
+#import "MultiFilterViewController.h"
 
 
 @interface ViewController ()
@@ -35,6 +36,10 @@
     [self presentViewController:single animated:YES completion:nil];
 }
 - (IBAction)multiButtonOnClicked:(id)sender {
+    MultiFilterViewController *multi = [[MultiFilterViewController alloc] init];
+    [self presentViewController:multi animated:YES completion:nil];
+    
 }
+
 
 @end
